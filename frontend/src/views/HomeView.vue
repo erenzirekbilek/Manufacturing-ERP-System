@@ -1,16 +1,15 @@
 <template>
   <div class="home">
-    <h1>Manufacturing ERP System</h1>
-    <p>Welcome to the ERP dashboard</p>
+    <Dashboard />
   </div>
 </template>
 
 <script setup>
+import Dashboard from '../components/Dashboard.vue';
 </script>
 
 <style scoped>
 .home {
   padding: 20px;
-  text-align: center;
 }
 </style>
