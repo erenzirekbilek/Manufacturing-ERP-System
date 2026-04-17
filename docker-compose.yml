@@ -21,3 +21,19 @@ services:
       - SPRING_DATASOURCE_DRIVERCLASSNAME=org.h2.Driver
     volumes:
       - ./backend:/app
+    depends_on:
+      - database
+
+  database:
+    image: postgres:16-alpine
+    environment:
+      - POSTGRES_USER=erpuser
+      - POSTGRES_PASSWORD=erppass
+      - POSTGRES_DB=erpdb
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:
