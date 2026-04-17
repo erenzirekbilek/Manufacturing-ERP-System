@@ -3,6 +3,9 @@
     <router-link to="/">Home</router-link>
     <router-link to="/users">Users</router-link>
     <router-link to="/products">Products</router-link>
+    <router-link to="/orders">Orders</router-link>
+    <router-link to="/customers">Customers</router-link>
+    <router-link to="/inventory">Inventory</router-link>
     <router-link to="/about">About</router-link>
   </nav>
 </template>
